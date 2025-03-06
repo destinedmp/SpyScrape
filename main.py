@@ -2,15 +2,6 @@ import streamlit as st
 import stockfuncs as sf
 from fmp_python.fmp import FMP
 from google import genai
-import os
-from dotenv import load_dotenv
-
-def loadConfig():
-    load_dotenv()  # Loads .env file
-    return {
-        "api_key": os.getenv("API_KEY"),
-        "api_key2": os.getenv("API_KEY2")
-    }
 
 def initializeSessionState():
     """Initialize Streamlit session state variables"""
@@ -25,10 +16,9 @@ def main():
     # Initialize session state variables
     initializeSessionState()
 
-    # Load API keys
-    config = loadConfig()
-    fmp = FMP(api_key=config["api_key"])
-    client = genai.Client(api_key=config["api_key2"])  # Gemini API Key
+    # Load API keys from Streamlit secrets
+    fmp = FMP(api_key=st.secrets["api_key"])
+    client = genai.Client(api_key=st.secrets["api_key2"])  # Gemini API Key
     
     # Page Title
     st.title("📈 Discounted Cash Flow Analysis")
