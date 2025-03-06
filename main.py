@@ -2,10 +2,15 @@ import streamlit as st
 import stockfuncs as sf
 from fmp_python.fmp import FMP
 from google import genai
+import os
+from dotenv import load_dotenv
 
-# Access API keys from Streamlit secrets
-api_key = st.secrets["api_keys"]["API_KEY"]
-api_key2 = st.secrets["api_keys"]["API_KEY2"]
+def loadConfig():
+    load_dotenv()  # Loads .env file
+    return {
+        "api_key": os.getenv("API_KEY"),
+        "api_key2": os.getenv("API_KEY2")
+    }
 
 def initializeSessionState():
     """Initialize Streamlit session state variables"""
