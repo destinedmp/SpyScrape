@@ -1,7 +1,5 @@
 from bs4 import BeautifulSoup
-from polygon import RESTClient
 import requests
-from google import genai
 
 def findTickerSymbol(companyName, client):
     """
