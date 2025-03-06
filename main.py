@@ -59,17 +59,17 @@ def main():
                 fcfList, cash, debt, reqRate = financialData
 
                 # Display Financial Data
-                st.subheader("📊 Financial Data (in Millions)")
-                st.markdown("All values below are in **millions of dollars ($M)** for easy readability.")
+                st.subheader("📊 Financial Data (in millions)")
+                st.markdown("All values below are in **millions of dollars**")
 
                 col1, col2 = st.columns(2)
 
                 with col1:
-                    st.metric(label="📉 Free Cash Flow (FCF)", value=f"${fcfList[0]:,.2f}M")
-                    st.metric(label="💰 Cash on Hand", value=f"${cash:,.2f}M")
+                    st.metric(label="📉 Free Cash Flow (FCF)", value=f"${fcfList[0]:,.2f}")
+                    st.metric(label="💰 Cash on Hand", value=f"${cash:,.2f}")
 
                 with col2:
-                    st.metric(label="💸 Total Debt", value=f"${debt:,.2f}M")
+                    st.metric(label="💸 Total Debt", value=f"${debt:,.2f}")
                     st.metric(label="📊 Required Rate of Return (WACC)", value=f"{reqRate:.2%}")  # Display WACC as percentage
 
                 st.divider()
