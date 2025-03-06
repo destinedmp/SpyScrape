@@ -8,7 +8,7 @@ def initializeSessionState():
     if "ticker" not in st.session_state:
         st.session_state.ticker = "NVDA"
     if "growthRate" not in st.session_state:
-        st.session_state.growthRate = 0.05  # Default growth rate
+        st.session_state.growthRate = 0.3  # Default growth rate
     if "intrinsicPrice" not in st.session_state:
         st.session_state.intrinsicPrice = None  # Store calculated intrinsic price
 
