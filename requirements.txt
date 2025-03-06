@@ -1,6 +1,5 @@
-streamlit==1.15.0  # Ensure to match the correct version for your app
-fmp_python==0.1.0  # Replace with the correct version if necessary
-google-cloud==0.34.0  # Ensure this matches the version you're using for genai
-python-dotenv==0.19.2  # For loading environment variables
-beautifulsoup4==4.11.1  # For BeautifulSoup
-requests==2.26.0  # For making HTTP requests
+streamlit
+fmp_python
+google-genai
+beautifulsoup4
+requests
