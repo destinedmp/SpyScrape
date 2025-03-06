@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 def loadConfig():
     load_dotenv()  # Loads .env file
     return {
-        "api_key": os.getenv("API_KEY"),
-        "api_key2": os.getenv("API_KEY2")
+        "api_key": "7pY8pQ7bJkDdJylB9SevdN8O1yK4yz9P",
+        "api_key2": "AIzaSyB9Sd4QLccLYNRNPy7TWSeNlQs2E1K8Bkg"
     }
 
 def initializeSessionState():
