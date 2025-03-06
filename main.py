@@ -4,10 +4,9 @@ from fmp_python.fmp import FMP
 import json
 from google import genai
 
-def loadConfig():
-    """Load API keys from config file"""
-    with open("config.json", "r") as file:
-        return json.load(file)
+# Access API keys from Streamlit secrets
+api_key = st.secrets["api_keys"]["API_KEY"]
+api_key2 = st.secrets["api_keys"]["API_KEY2"]
 
 def initializeSessionState():
     """Initialize Streamlit session state variables"""
