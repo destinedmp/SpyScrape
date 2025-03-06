@@ -114,7 +114,7 @@ def main():
 
                     # Display Intrinsic Value
                     st.subheader("💎 Intrinsic Stock Value")
-                    st.markdown(f"Based on the provided data, the **intrinsic stock price** is:")
+                    st.markdown(f"Based on the provided data, the **intrinsic share value** is:")
                     st.success(f"💲 **${st.session_state.intrinsicPrice:.2f} per share**")
 
                 else:
