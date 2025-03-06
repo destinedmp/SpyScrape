@@ -1,7 +1,6 @@
 import streamlit as st
 import stockfuncs as sf
 from fmp_python.fmp import FMP
-import json
 from google import genai
 
 # Access API keys from Streamlit secrets
