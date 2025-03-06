@@ -3,4 +3,4 @@ streamlit==1.7.0
 fmp-python==0.1.0
 google==3.0.0
 requests==2.25.1
-protobuf==3.20.x
+protobuf==3.20.0
