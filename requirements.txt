@@ -1,10 +1,6 @@
-altair==4.2.0
-streamlit==1.7.0
-pandas==2.2.3
-numpy==2.2.3
-requests==2.25.1
-protobuf==3.20.0
-pydeck==0.9.1
-pyarrow==19.0.1
-tornado==6.4.2
-click==7.1.
+streamlit==1.15.0  # Ensure to match the correct version for your app
+fmp_python==0.1.0  # Replace with the correct version if necessary
+google-cloud==0.34.0  # Ensure this matches the version you're using for genai
+python-dotenv==0.19.2  # For loading environment variables
+beautifulsoup4==4.11.1  # For BeautifulSoup
+requests==2.26.0  # For making HTTP requests
