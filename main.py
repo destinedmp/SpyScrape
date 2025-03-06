@@ -123,7 +123,7 @@ def main():
                 st.error("❌ Error: Could not retrieve financial data. Please ensure the ticker is correct or try another company.")
 
         except Exception as e:
-            st.error(f"❌ Error: Could not retrieve financial data for **{st.session_state.ticker}**. Please ensure the ticker is correct or try another company. Worst case, I have no more API tokens :p, try again in 24 hours")
+            st.error(f"❌ Error: Could not retrieve financial data for **{st.session_state.ticker}**. Please ensure the ticker is correct or try another company. Worst case, I have no more API tokens, try again in 24 hours")
 
 if __name__ == "__main__":
     main()
