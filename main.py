@@ -6,7 +6,7 @@ from google import genai
 def initializeSessionState():
     """Initialize Streamlit session state variables"""
     if "ticker" not in st.session_state:
-        st.session_state.ticker = "NVDA"
+        st.session_state.ticker = "MSFT"
     if "growthRate" not in st.session_state:
         st.session_state.growthRate = 0.3  # Default growth rate
     if "intrinsicPrice" not in st.session_state:
@@ -15,7 +15,7 @@ def initializeSessionState():
 def main():
     # Initialize session state variables
     initializeSessionState()
-
+    st.set_page_config(page_title="Discounted Cash Flow Analysis")
     # Load API keys from Streamlit secrets
     fmp = FMP(api_key=st.secrets["api_key"])
     client = genai.Client(api_key=st.secrets["api_key2"])  # Gemini API Key
